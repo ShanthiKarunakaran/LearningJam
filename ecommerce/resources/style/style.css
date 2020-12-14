@@ -1,0 +1,120 @@
+/* reset */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* global */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: #f2fc91;
+}
+
+button {
+	border: 0;
+	border-radius: 5px;
+	padding: 10px;
+	color: #000;/*default color*/
+	font-size: 20px;
+	min-width: 150px;/*To look into: min-width affects responsive design*/
+	max-width: 200px;
+}
+
+.red {
+	background-color: #c13828;
+	color: #fff;
+}
+
+.green {
+	background-color: green;
+}
+
+.none {
+	display: none;/*works for screen readers*/
+}
+
+a{
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* layout */
+.wrapper {
+	width: 1024px;
+	/*browser automatically calculates 
+	according to width how much space is left 
+	and distributes evenly on left and right and cause 
+	horiz. center*/
+	margin: 0 auto; 
+	margin-top: 10px;
+}
+.content {
+	margin-top: 20px;
+}
+
+/* header */
+header {
+	border-bottom: 2px solid rgb(207,201,118);
+	height: 70px;
+	display: flex;
+	justify-content: space-between; /*horizontal(main axis) : flushes items to either ends*/
+	align-items: center;/*vertical(cross axis) : vertically center align your content*/
+	margin-bottom: 20px;
+}
+
+/* logo */
+
+/* nav */
+
+/*content*/
+
+/*only for direct child of .content*/
+.content h2{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/*cards*/
+.product ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product ul li{
+	list-style: none;
+	background: #fff9e7;
+	flex-basis: 220px;
+	margin: 0 20px 10px 0;
+	text-align: center;
+	padding: 10px 0;
+	border: 1px solid #fff;
+}
+
+/*Links*/
+.links {
+	text-align: center;
+}
+
+/*carddetails*/
+.cartDetails ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cartDetails ul li{
+	list-style: none;
+	background: #fff9e7;
+	flex-basis: 220px;
+	margin: 0 20px 10px 0;
+	padding: 10px 0;
+	text-align: center;
+	border: 1px solid #fff;
+}
+/*form*/
+input[type=email] {
+
+}
